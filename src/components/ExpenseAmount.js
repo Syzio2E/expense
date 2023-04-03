@@ -4,13 +4,13 @@ const ExpenseAmount = (props)=>{
     const [amount, setAmount] = useState(props.amount)
 
     const changeHandler = () =>{
-        setAmount('100');
+        setAmount('');
       }
 
 return (
     <div>
     <div className="expense-item__price" >{amount}</div>
-    <button onClick={changeHandler}>update expense</button>
+    <button onClick={changeHandler}>Delete</button>
     </div>
 )
 }
